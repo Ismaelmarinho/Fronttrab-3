@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Product CRUD</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>CRUD Produtos</title>
+  <link rel="stylesheet" type="text/css" href="./styles/import.css">
 </head>
 <body>
-  <h1>Product CRUD</h1>
+  <h1>CRUD Produtos</h1>
 
   <form id="add-product-form">
-    <h2>Add Product</h2>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="price">Price:</label>
-    <input type="number" id="price" name="price" required step="0.01">
-    <button type="submit">Add</button>
+    <h2>Adicionar Produtos</h2>
+    <div>
+      <section>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="price">Preço:</label>
+        <input type="number" id="price" name="price" required step="0.01">
+      </section>
+      <div class="description">
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+    </div>
+    <button type="submit">+ Adicionar</button>
   </form>
 
   <ul id="products"></ul>
 
-  <script src="app.js"></script>
-  <script>
-    // Call fetchProducts() when the page loads
-    window.addEventListener('load', fetchProducts);
-  </script>
+  <aside>
+    <form id="updateForm">
+      <h2>Editar Produto</h2>
+      <div>
+        <section>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="price">Preço:</label>
+          <input type="number" id="price" name="price" required step="0.01">
+        </section>
+        <div class="description">
+          <label for="description">Descrição:</label>
+          <textarea id="description" name="description"></textarea>
+        </div>
+      </div>
+      <button type="submit">Confirmar</button>
+    </form>
+  </aside>
+
+  <script type="module" src="./src/app.js"></script>
 </body>
 </html>
