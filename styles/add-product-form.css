@@ -1,0 +1,26 @@
+#add-product-form{
+  margin-top: 20px;
+  text-align: center;
+  background-color: var(--bg-card);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #000000;
+  margin-inline: 5%;
+  min-height: fit-content;
+
+  & h2{
+    margin-bottom: 20px;
+  }
+
+  & label {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  & > div{
+    text-align: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+  }
+}

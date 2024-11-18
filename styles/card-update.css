@@ -1,0 +1,13 @@
+aside{
+  display: none;
+  position: absolute;
+  top: calc((100% - 400px)/2);
+  left: calc((100% - 75%)/2);
+  
+  background: #3b3b3bd7;
+  border: 1px solid #666;
+  padding: 20px;
+
+  width: 75%;
+  height: 400px;
+}
